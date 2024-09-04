@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/myStyleSheet.css">
+    <title>Create A Contact List</title>
+</head>
+<body>
+    <div class="content">
+        <div>
+        <h1 class="main-title">Create A Contact List</h1>
+        <h2>Enter a name and a phone number.
+            <br>Then click on "Add Contact" to add them to a list.</h2>
+        </div>
+
+        <div class="flexbox">
+            <label for="contactName">Contact Name:</label>
+            <input id="newNameTxt" type="text" name="contactName">
+            <label for="contactNum">Contact Number:</label>
+            <input id="newNumTxt" type="text" name="contactNum">
+            <button id="newContactBtn" type="button">Add Contact</button>
+        </div>
+
+        <div class="list">
+            <div id="contactList">
+            <h2>Contact List</h2>
+            <ul>
+            </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="scripts/myScripts.js"></script>
+</body>
+</html>
