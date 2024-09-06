@@ -30,10 +30,20 @@ function addContact(){
         newName.value = ""
         newNum.value = ""
     }
+    else if (newName.value == "" && newNum.value != "") 
+    {
+        //error message if contact name input is invalid/blank
+        alert("Input a name to add to the Contact List.")
+    }
+    else if (newNum.value == "" && newName.value != "") 
+        {
+            //error message if contact phone number input is invalid/blank
+            alert("Input a phone number to add to the Contact List.")
+        }
     else
     {
-        //error message if input is invalid/blank
-        alert("Input a name and number to add to the Contact List.")
+        //error message if input for both name and phone number is invalid/blank
+        alert("Input a name and phone number to add to the Contact List.")
     }
 }
 function removeContact(event)
