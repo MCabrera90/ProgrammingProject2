@@ -28,7 +28,8 @@
             <label for="contactName">Contact Name:</label><br>
             <input id="newNameTxt" type="text" name="contactName"><br><br>
             <label for="contactNum">Contact Number:</label><br>
-            <input id="newNumTxt" type="text" name="contactNum"><br><br>
+            <input id="newNumTxt" type="text" name="contactNum" 
+                onkeypress="return /[0-9]/i.test(event.key)"><br><br>
             <button id="newContactBtn" type="button">Add Contact</button>
         </div>
 

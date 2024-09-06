@@ -20,7 +20,7 @@ contactList.addEventListener("click", function(){ removeContact(event)});
 
 //function to add item from user input into list
 function addContact(){
-    if (newName.value != "" && newNum.value != "")   //verify that user input is not blank
+    if (newName.value != "" && newNum.value != ""&& (newNum.value.length == 10 || newNum.value.length == 7))   //verify that user input is not blank
     {
         const addItem = document.createElement("li") //create list item
         //set value of list item to contact name and contact number
@@ -35,7 +35,7 @@ function addContact(){
         //error message if contact name input is invalid/blank
         alert("Input a name to add to the Contact List.")
     }
-    else if (newNum.value == "" && newName.value != "") 
+    else if (newNum.value == "" || (newNum.value.length != 10 || newNum.value.length != 7) && newName.value != "") 
         {
             //error message if contact phone number input is invalid/blank
             alert("Input a phone number to add to the Contact List.")
